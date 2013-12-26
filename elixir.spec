@@ -2,11 +2,11 @@
 #
 # sudo yum -y install rpmdevtools erlang && rpmdev-setuptree
 # wget https://raw.github.com/nmilford/rpm-elixir/master/elixir.spec -O ~/rpmbuild/SPECS/elixir.spec
-# wget https://github.com/elixir-lang/elixir/archive/v0.11.2.tar.gz -O  ~/rpmbuild/SOURCES/v0.11.2.tar.gz
+# wget https://github.com/elixir-lang/elixir/archive/v0.12.0.tar.gz -O  ~/rpmbuild/SOURCES/v0.12.0.tar.gz
 # rpmbuild -bb ~/rpmbuild/SPECS/elixir.spec
 
 Name:      elixir
-Version:   0.11.2
+Version:   0.12.0
 Release:   1
 Summary:   The Elixir programming language for the Erlang VM.
 License:   Apache 2.0
@@ -46,6 +46,8 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Fri Dec 25 2013 Nathan Milford <nathan@milford.io> 0.12.0-1
+- bumped version.
 * Fri Dec 06 2013 Nathan Milford <nathan@milford.io> 0.11.2-1
 - bumped version.
 * Sun Aug 04 2013 Nathan Milford <nathan@milford.io> 0.10.1-1
